@@ -1,6 +1,12 @@
+#logo {
+    width: 15%;
+    margin-top: 5%;
+}
+
 body h1 {
-    margin-top: 3%;
+    margin-top: 5%;
     text-align: center; 
+    color: gray;
 }
 
 #formulario {
@@ -8,5 +14,13 @@ body h1 {
 }
 
 #formulario #dos {
-    margin-top: 2%;
+    margin-top: 5%;
+}
+#siguien1 {
+    width: 150px;
+    margin-top: 5%; 
+}
+
+#selecciones {
+    margin-top: 5%;  
 }
