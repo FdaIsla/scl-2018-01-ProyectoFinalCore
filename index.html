@@ -14,19 +14,19 @@
 
 <body>
 
-     <div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-12 col-md-12">
                 <img src="img/maquetaLogo.png" alt="logotipo">
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row mx-auto">
             <div class="col-12 col-md-12">
-                    <p>Haz click para ingresar tu resgistro de visita</p>
-                    <button type="button" class="btn btn-primary btn-lg">Ingresa</button>
+                <p>Haz click para ingresar tu registro de visita</p>
+                <button type="button" class="btn btn-primary btn-lg" onclick="visitRegister()">Ingresa</button>
             </div>
         </div>
     </div>
@@ -54,13 +54,13 @@
         };
         firebase.initializeApp(config);
     </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
     <!-- others src -->
-    <script
- src="https://code.jquery.com/jquery-3.3.1.min.js"
- integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
- crossorigin="anonymous">
-</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- js src -->
     <script src="/assets/js/app.js"></script>

@@ -63,7 +63,7 @@ if (user) {
 
 // Obtener datos del usuario
 var user = firebase.auth().currentUser;
-var name, email, photoUrl, uid, emailVerified, rut;
+var name, email, photoUrl, uid, emailVerified;
 
 if (user != null) {
     name = user.displayName;
@@ -71,5 +71,39 @@ if (user != null) {
     photoUrl = user.photoURL;
     emailVerified = user.emailVerified;
     uid = user.uid;
-    rut = user.rut;
+
 }
+
+
+function visitRegister() {
+
+}
+
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
+
+// For todays date;
+Date.prototype.today = function() {
+    return ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + this.getFullYear();
+}
+
+// For the time now
+Date.prototype.timeNow = function() {
+    return ((this.getHours() < 10) ? "0" : "") + this.getHours() + ":" + ((this.getMinutes() < 10) ? "0" : "") + this.getMinutes() + ":" + ((this.getSeconds() < 10) ? "0" : "") + this.getSeconds();
+}
+
+var datetime = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
+
+db.collection("Visitantes").add({
+        Nombre: document.getElementById().value,
+        Rut: document.getElementById().value,
+        Teléfono: document.getElementById().value,
+        Hora: datetime,
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
