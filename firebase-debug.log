@@ -1,0 +1,38 @@
+[debug] [2018-07-31T19:50:50.672Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T19:50:50.675Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-07-31T19:50:50.676Z] CLI Version:   4.0.1
+[debug] [2018-07-31T19:50:50.676Z] Platform:      linux
+[debug] [2018-07-31T19:50:50.676Z] Node Version:  v6.14.3
+[debug] [2018-07-31T19:50:50.676Z] Time:          Tue Jul 31 2018 15:50:50 GMT-0400 (-04)
+[debug] [2018-07-31T19:50:50.676Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T19:50:50.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T19:50:50.687Z] > authorizing via signed-in user
+[debug] [2018-07-31T19:50:50.690Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/scl-2018-01-proyectofinal  
+  
+ Tue Jul 31 2018 15:50:50 GMT-0400 (-04)
+[debug] [2018-07-31T19:50:51.475Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T19:50:51.479Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/scl-2018-01-proyectofinal/tokens  
+  
+ Tue Jul 31 2018 15:50:51 GMT-0400 (-04)
+[debug] [2018-07-31T19:50:52.492Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T19:50:52.495Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/scl-2018-01-proyectofinal  
+  
+ Tue Jul 31 2018 15:50:52 GMT-0400 (-04)
+[debug] [2018-07-31T19:50:53.715Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/laboratoria/Documents/Proyectos-SofiaM/scl-2018-01-ProyectoFinalCore'...
+[info] 
+[debug] [2018-07-31T19:50:54.534Z] Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
+    at Error (native)
+    at Object.fs.mkdirSync (fs.js:932:18)
+    at Object.assertLogsPath (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
+    at new Controller (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
+    at FunctionsEmulator.start (/usr/lib/node_modules/firebase-tools/lib/functionsEmulator.js:113:21)
+    at Object.start (/usr/lib/node_modules/firebase-tools/lib/serve/functions.js:9:29)
+    at /usr/lib/node_modules/firebase-tools/lib/serve/index.js:17:21
+    at arrayMap (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9554:14)
+    at _serve (/usr/lib/node_modules/firebase-tools/lib/serve/index.js:15:7)
+[error] 
+[error] Error: An unexpected error has occurred.
