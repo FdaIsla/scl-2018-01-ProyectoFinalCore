@@ -44,32 +44,71 @@ function isInteger(userInput) {
 }
 
 // Usuarios con sesión activa
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // User is signed in.
-    } else {
-        // No user is signed in.
-    }
-});
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//         // User is signed in.
+//     } else {
+//         // No user is signed in.
+//     }
+// });
 
 
-var user = firebase.auth().currentUser;
+// var user = firebase.auth().currentUser;
 
-if (user) {
-    // User is signed in.
-} else {
-    // No user is signed in.
-}
+// if (user) {
+//     // User is signed in.
+// } else {
+//     // No user is signed in.
+// }
 
 // Obtener datos del usuario
-var user = firebase.auth().currentUser;
-var name, email, photoUrl, uid, emailVerified, rut;
+// var user = firebase.auth().currentUser;
+// var name, email, photoUrl, uid, emailVerified;
 
-if (user != null) {
-    name = user.displayName;
-    email = user.email;
-    photoUrl = user.photoURL;
-    emailVerified = user.emailVerified;
-    uid = user.uid;
-    rut = user.rut;
+// if (user != null) {
+//     name = user.displayName;
+//     email = user.email;
+//     photoUrl = user.photoURL;
+//     emailVerified = user.emailVerified;
+//     uid = user.uid;
+
+// }
+
+
+function visitRegister() {
+    let nombre = name.value;
+    let rut = rut.value;
+    let telefono = phone.value;
+    let hora = datetime;
+
+    // Para obtener la fecha actual
+    Date.prototype.today = function() {
+        return ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + this.getFullYear();
+    }
+
+    // Para obtener la hora/min/sec actual
+    Date.prototype.timeNow = function() {
+        return ((this.getHours() < 10) ? "0" : "") + this.getHours() + ":" + ((this.getMinutes() < 10) ? "0" : "") + this.getMinutes() + ":" + ((this.getSeconds() < 10) ? "0" : "") + this.getSeconds();
+    }
+
+    var datetime = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
+
+    const firebase = require("firebase");
+    // Required for side-effects
+    require("firebase/firestore");
+
+
+    db.collection("Visitantes").add({
+            Nombre: nombre,
+            Rut: rut,
+            Teléfono: telefono,
+            Hora: hora,
+        })
+        .then(function(docRef) {
+            console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        });
+
 }
