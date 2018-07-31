@@ -1,38 +1,41 @@
-[debug] [2018-07-31T19:50:50.672Z] ----------------------------------------------------------------------
-[debug] [2018-07-31T19:50:50.675Z] Command:       /usr/bin/node /usr/bin/firebase serve
-[debug] [2018-07-31T19:50:50.676Z] CLI Version:   4.0.1
-[debug] [2018-07-31T19:50:50.676Z] Platform:      linux
-[debug] [2018-07-31T19:50:50.676Z] Node Version:  v6.14.3
-[debug] [2018-07-31T19:50:50.676Z] Time:          Tue Jul 31 2018 15:50:50 GMT-0400 (-04)
-[debug] [2018-07-31T19:50:50.676Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T21:59:58.215Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T21:59:58.218Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-07-31T21:59:58.218Z] CLI Version:   4.0.1
+[debug] [2018-07-31T21:59:58.218Z] Platform:      linux
+[debug] [2018-07-31T21:59:58.219Z] Node Version:  v6.14.3
+[debug] [2018-07-31T21:59:58.219Z] Time:          Tue Jul 31 2018 17:59:58 GMT-0400 (-04)
+[debug] [2018-07-31T21:59:58.219Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-31T19:50:50.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-31T19:50:50.687Z] > authorizing via signed-in user
-[debug] [2018-07-31T19:50:50.690Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/scl-2018-01-proyectofinal  
+[debug] [2018-07-31T21:59:58.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T21:59:58.230Z] > authorizing via signed-in user
+[debug] [2018-07-31T21:59:58.232Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/scl-2018-01-proyectofinal  
   
- Tue Jul 31 2018 15:50:50 GMT-0400 (-04)
-[debug] [2018-07-31T19:50:51.475Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-31T19:50:51.479Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/scl-2018-01-proyectofinal/tokens  
+ Tue Jul 31 2018 17:59:58 GMT-0400 (-04)
+[debug] [2018-07-31T21:59:59.165Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T21:59:59.170Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/scl-2018-01-proyectofinal/tokens  
   
- Tue Jul 31 2018 15:50:51 GMT-0400 (-04)
-[debug] [2018-07-31T19:50:52.492Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-31T19:50:52.495Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/scl-2018-01-proyectofinal  
+ Tue Jul 31 2018 17:59:59 GMT-0400 (-04)
+[debug] [2018-07-31T21:59:59.876Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T21:59:59.879Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/scl-2018-01-proyectofinal  
   
- Tue Jul 31 2018 15:50:52 GMT-0400 (-04)
-[debug] [2018-07-31T19:50:53.715Z] <<< HTTP RESPONSE 200
+ Tue Jul 31 2018 17:59:59 GMT-0400 (-04)
+[debug] [2018-07-31T22:00:00.966Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/laboratoria/Documents/Proyectos-SofiaM/scl-2018-01-ProyectoFinalCore'...
 [info] 
-[debug] [2018-07-31T19:50:54.534Z] Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/logs'
-    at Error (native)
-    at Object.fs.mkdirSync (fs.js:932:18)
-    at Object.assertLogsPath (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/emulator/logs.js:65:10)
-    at new Controller (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/cli/controller.js:77:32)
-    at FunctionsEmulator.start (/usr/lib/node_modules/firebase-tools/lib/functionsEmulator.js:113:21)
-    at Object.start (/usr/lib/node_modules/firebase-tools/lib/serve/functions.js:9:29)
-    at /usr/lib/node_modules/firebase-tools/lib/serve/index.js:17:21
-    at arrayMap (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:639:23)
-    at Function.map (/usr/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9554:14)
-    at _serve (/usr/lib/node_modules/firebase-tools/lib/serve/index.js:15:7)
-[error] 
-[error] Error: An unexpected error has occurred.
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-31T22:00:03.015Z] Fetching environment
+[debug] [2018-07-31T22:00:03.017Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/153325937655:getServerAppConfig  
+  
+ Tue Jul 31 2018 18:00:03 GMT-0400 (-04)
+[debug] [2018-07-31T22:00:03.017Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/153325937655/clients/_:getWebAppConfig  
+  
+ Tue Jul 31 2018 18:00:03 GMT-0400 (-04)
+[debug] [2018-07-31T22:00:03.437Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T22:00:03.438Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-31T22:00:03.464Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-07-31T22:00:05.988Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.

@@ -14,84 +14,84 @@
 
 <body>
     <header class="menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a id="logo" class="navbar-brand" href="#">Logotipo</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a id="logo" class="navbar-brand" href="#">Logotipo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="ingreso.html">Ingreso<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Cerrar sección</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-        </header>
-            <div id="box" class="container">
-                <div class="row">
-                    <div class="col-4 col-md-6 ">
-                        <img src="img/IF.png" alt="">
-                    </div>
-                    <div class="col-8 col-md-6">
-                        <h2>Marcela López</h2>
-                            <p>Administración del IF</p>
-                                <div class="form-group">
-                                    <select id="disabledSelect" class="form-control">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ingreso.html">Ingreso<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="box" class="container">
+        <div class="row">
+            <div class="col-4 col-md-6 ">
+                <img src="img/IF.png" alt="">
+            </div>
+            <div class="col-8 col-md-6">
+                <h2>Marcela López</h2>
+                <p>Administración del IF</p>
+                <div class="form-group">
+                    <select id="disabledSelect" class="form-control">
                                       <option>Disponible</option>
                                       <option>Ocupado</option>
                                     </select>
-                                  </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box1" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrea Sepulveda</h5>
+                        <p class="card-text">Laboratoria</p>
+                        <h6>10:22 hrs</h6>
                     </div>
                 </div>
-               <div id="box1" class="container">
-                <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title">Andrea Sepulveda</h5>
-                              <p class="card-text">Laboratoria</p>
-                              <h6>10:22 hrs</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title">Andrés Gonzalez</h5>
-                              <p class="card-text">Café altura</p>
-                              <h6>11:32 hrs</h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Andrés Gonzalez</h5>
+                        <p class="card-text">Café altura</p>
+                        <h6>11:32 hrs</h6>
                     </div>
-                    <div id="box1" class="container">
-                            <div class="row">
-                                    <div class="col-sm-6">
-                                      <div class="card">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Manuel Serrano</h5>
-                                          <p class="card-text">Elestudio</p>
-                                          <h6>17:05 hrs</h6>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                      <div class="card">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Daniel Muñoz</h5>
-                                          <p class="card-text">Agualabs</p>
-                                          <h6>17:30 hrs</h6>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box1" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manuel Serrano</h5>
+                        <p class="card-text">Elestudio</p>
+                        <h6>17:05 hrs</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Daniel Muñoz</h5>
+                        <p class="card-text">Agualabs</p>
+                        <h6>17:30 hrs</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- firebase src  -->
@@ -109,12 +109,9 @@
         firebase.initializeApp(config);
     </script>
     <!-- others src -->
-    <script
- src="https://code.jquery.com/jquery-3.3.1.min.js"
- integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
- crossorigin="anonymous">
-</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- js src -->
     <script src="/assets/js/app.js"></script>

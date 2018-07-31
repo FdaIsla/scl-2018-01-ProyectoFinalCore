@@ -16,6 +16,29 @@ function loginWithFirebase() {
             alert("Error de firebase > Mensaje > " + error.message);
         });
 }
+//Registro
+function registerWithFirebase() {
+    const emailValue = email.value;
+    const passwordValue = password.value;
+
+    firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+        .then(() => {
+            console.log("Usuario creado con éxito");
+            alert("Tu cuenta se ha creado con éxito");
+            redirectFromLogin()
+
+        })
+        .catch((error) => {
+            console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+            alert("Error de firebase > Código > " + error.code);
+            console.log("Error de firebase > Mensaje > " + error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+            alert("Error de firebase > Mensaje > " + error.message);
+        });
+}
+
+function redirectFromLogin() {
+    location.href = "perfil.html";
+}
 //  validación de registro
 function isValidEmailFormat(userInput) {
     if (userInput.includes("@")) {
@@ -44,32 +67,32 @@ function isInteger(userInput) {
 }
 
 // Usuarios con sesión activa
-// firebase.auth().onAuthStateChanged(function(user) {
-//     if (user) {
-//         // User is signed in.
-//     } else {
-//         // No user is signed in.
-//     }
-// });
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        // User is signed in.
+    } else {
+        // No user is signed in.
+    }
+});
 
 
-// var user = firebase.auth().currentUser;
+var user = firebase.auth().currentUser;
 
-// if (user) {
-//     // User is signed in.
-// } else {
-//     // No user is signed in.
-// }
+if (user) {
+    // User is signed in.
+} else {
+    // No user is signed in.
+}
 
 // Obtener datos del usuario
-// var user = firebase.auth().currentUser;
-// var name, email, photoUrl, uid, emailVerified;
+var user = firebase.auth().currentUser;
+var name, email, photoUrl, uid, emailVerified;
 
-// if (user != null) {
-//     name = user.displayName;
-//     email = user.email;
-//     photoUrl = user.photoURL;
-//     emailVerified = user.emailVerified;
-//     uid = user.uid;
+if (user != null) {
+    name = user.displayName;
+    email = user.email;
+    photoUrl = user.photoURL;
+    emailVerified = user.emailVerified;
+    uid = user.uid;
 
-// }
+}

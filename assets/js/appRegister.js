@@ -17,9 +17,9 @@ function visitRegister() {
 
     var datetime = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
 
-    const firebase = require("firebase");
-    // Required for side-effects
-    require("firebase/firestore");
+    // const firebase = require("firebase");
+    // // Required for side-effects
+    // require("firebase/firestore");
 
 
     db.collection("Visitantes").add({
