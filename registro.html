@@ -8,25 +8,39 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/registro.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <h1>Registrate</h1>
+    </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 ">
-                <!-- <div class="card" style="width: 20rem;"> -->
-                <img class="card-img-top rounded mx-auto d-block " src="img/maquetaLogo.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Haz click para ingresar tu resgistro de visita</p>
-                    <a href="registro.html" class="btn btn-primary btn-lg btn-block">Go</a>
+    <form>
+        <div id="formulario" class="container">
+            <div id="uno" class="row">
+                <div class="col-6">
+                    <input id="name" type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-6">
+                    <input id="rut" type="number" class="form-control" placeholder="rut">
                 </div>
             </div>
+            <div id="dos" class="row">
+                <div class="col-6">
+                    <input id="phone" type="number" class="form-control" placeholder="telefono">
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Hora">
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" onclick="visitRegister()">Submit</button>
+            </div>
         </div>
-    </div>
-    </div>
+    </form>
+
 
 
 
@@ -50,7 +64,6 @@
         };
         firebase.initializeApp(config);
     </script>
-
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
     <!-- others src -->
