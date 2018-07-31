@@ -16,25 +16,26 @@
     <header>
         <img id="logo" class="rounded mx-auto d-block" src="img/maquetaLogo.png" alt="">
     </header>
+
         <h1>Registrate</h1>
-     <form>
+
         <div id="formulario" class="container">
             <div id="uno" class="row">
                 <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Nombre">
+                    <input id="name" type="text" class="form-control" placeholder="Nombre">
                 </div>
                 <div class="col-6">
-                    <input type="number" class="form-control" placeholder="rut">
+                    <input id="rut" type="number" class="form-control" placeholder="rut">
                 </div>
             </div>
             <div id="dos" class="row">
-                    <div class="col-6">
-                        <input type="text" class="form-control" placeholder="telefono">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Hora">
-                    </div>
+                <div class="col-6">
+                    <input id="phone" type="number" class="form-control" placeholder="telefono">
                 </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Hora">
+                </div>
+
 
                 <div id="selecciones" class="form-group">
                         <select id="disabledSelect" class="form-control">
@@ -58,10 +59,16 @@
                 <div class="col-12">
                         <button id="siguien1" type="submit" class="btn btn-primary mx-auto d-block">hecho</button>
                       </div>
+
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" onclick="visitRegister()">Submit</button>
+            </div>
+
         </div>
- </form>
-   
-     
+    </form>
+
+
 
 
 
@@ -84,13 +91,12 @@
         };
         firebase.initializeApp(config);
     </script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
     <!-- others src -->
-    <script
- src="https://code.jquery.com/jquery-3.3.1.min.js"
- integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
- crossorigin="anonymous">
-</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- js src -->
     <script src="/assets/js/app.js"></script>
