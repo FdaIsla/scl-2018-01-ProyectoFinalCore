@@ -1,0 +1,23 @@
+{
+  "name": "scl-2018-01-proyectofinalcore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-mock": "^2.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiaMaturanaM/scl-2018-01-ProyectoFinalCore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiaMaturanaM/scl-2018-01-ProyectoFinalCore/issues"
+  },
+  "homepage": "https://github.com/SofiaMaturanaM/scl-2018-01-ProyectoFinalCore#readme"
+}
