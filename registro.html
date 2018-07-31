@@ -17,28 +17,28 @@
         <img id="logo" class="rounded mx-auto d-block" src="img/maquetaLogo.png" alt="">
     </header>
 
-        <h1>Registrate</h1>
+    <h1>Registrate</h1>
 
-        <div id="formulario" class="container">
-            <div id="uno" class="row">
-                <div class="col-6">
-                    <input id="name" type="text" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="col-6">
-                    <input id="rut" type="number" class="form-control" placeholder="rut">
-                </div>
+    <div id="formulario" class="container">
+        <div id="uno" class="row">
+            <div class="col-6">
+                <input id="name" type="text" class="form-control" placeholder="Nombre">
             </div>
-            <div id="dos" class="row">
-                <div class="col-6">
-                    <input id="phone" type="number" class="form-control" placeholder="telefono">
-                </div>
-                <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Hora">
-                </div>
+            <div class="col-6">
+                <input id="rutNumber" type="number" class="form-control" placeholder="rut">
+            </div>
+        </div>
+        <div id="dos" class="row">
+            <div class="col-6">
+                <input id="phone" type="number" class="form-control" placeholder="telefono">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" placeholder="Hora">
+            </div>
 
 
-                <div id="selecciones" class="form-group">
-                        <select id="disabledSelect" class="form-control">
+            <div id="selecciones" class="form-group">
+                <select id="disabledSelect" class="form-control">
                           <option>Elestudio</option>
                           <option>Robotics Labs</option>
                           <option>Fábrica de medios</option>
@@ -53,20 +53,15 @@
                           <option>Tremenda</option>
                           <option>Ilegal</option>
                         </select>
-                      </div>
-
-
-                <div class="col-12">
-                        <button id="siguien1" type="submit" class="btn btn-primary mx-auto d-block">hecho</button>
-                      </div>
-
             </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-2" onclick="visitRegister()">Submit</button>
+
+
+            <div class="col-12">
+                <button id="siguien1" type="submit" class="btn btn-primary mx-auto d-block" onclick=" visitRegister()">¡Hecho!</button>
             </div>
 
         </div>
-    </form>
+        </form>
 
 
 
@@ -77,29 +72,31 @@
 
 
 
-    <!-- firebase src  -->
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyBDT0H4_ZGCGW4TmZMeYT9B4WU8JHhR4dc",
-            authDomain: "scl-2018-01-proyectofinal.firebaseapp.com",
-            databaseURL: "https://scl-2018-01-proyectofinal.firebaseio.com",
-            projectId: "scl-2018-01-proyectofinal",
-            storageBucket: "scl-2018-01-proyectofinal.appspot.com",
-            messagingSenderId: "153325937655"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
-    <!-- others src -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-    </script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- firebase src  -->
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBDT0H4_ZGCGW4TmZMeYT9B4WU8JHhR4dc",
+                authDomain: "scl-2018-01-proyectofinal.firebaseapp.com",
+                databaseURL: "https://scl-2018-01-proyectofinal.firebaseio.com",
+                projectId: "scl-2018-01-proyectofinal",
+                storageBucket: "scl-2018-01-proyectofinal.appspot.com",
+                messagingSenderId: "153325937655"
+            };
+            firebase.initializeApp(config);
+            // Get a reference to the database service
+            var database = firebase.database();
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+        <!-- others src -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- js src -->
-    <script src="/assets/js/app.js"></script>
+        <!-- js src -->
+        <script src="assets/js/appRegister.js"></script>
 </body>
 
 </html>
