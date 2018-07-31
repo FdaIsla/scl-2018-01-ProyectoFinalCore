@@ -1,0 +1,12 @@
+
+body p{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.card-img-top {
+    width: 40%;
+    margin-top: 30%;
+   
+}
