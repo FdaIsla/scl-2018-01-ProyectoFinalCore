@@ -1,16 +1,22 @@
 #logo {
     width: 15%;
     margin-top: 5%;
+    margin-left: 5%;
 }
 
 body h1 {
-    margin-top: 5%;
     text-align: center; 
-    color: gray;
+    color: rgb(58, 58, 58);
 }
 
 #formulario {
-    margin-top: 10%;
+    margin-top: 5%;
+    background: #f5f4f4;
+    padding: 2em;
+}
+
+#formulario input {
+    font-style: italic;
 }
 
 #formulario #dos {
@@ -22,5 +28,11 @@ body h1 {
 }
 
 #selecciones {
-    margin-top: 5%;  
+    margin-top: 5%; 
+    font-style: italic; 
+}
+
+#logoV{
+    margin-top: 50%; 
+    width: 25%;
 }

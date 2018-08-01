@@ -14,23 +14,26 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
+    <div id="ingreso" class="container">
+        <div class="row ">
             <div class="col-12 col-md-12 ">
-                <form class="form-inline">
-                    <div class="form-group mb-2">
-                        <label for="staticEmail2" class="sr-only">Email</label>
-                        <input type="email" class="form-control" id="staticEmail2" placeholder="email@example.com">
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2" onclick="loginWithFirebase()">Confirm identity</button>
-                </form>
-            </div>
-        </div>
-    </div>
+                <img id="logo" src="img/logoVisita.png" class="rounded mx-auto d-block" alt="">
+                    <h3>Registro de visitas</h3>
+                    <p>Ingresa a tu cuenta para comenzar a registrar y administrar tus visitas</p>
+                    <div class="col-12 col-md-12">
+                        <form id="formulario" class="rounded mx-auto d-block">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="staticEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                                 <div class="form-group">
+                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                 </div>
+                                    <button type="submit" class="btn btn-primary rounded mx-auto d-block" onclick="loginWithFirebase()" >Confirm</button>
+                                  </form>
+                                </div>
+                              </div>
+                           </div>
+                       </div>
 
 
     <!-- firebase src  -->

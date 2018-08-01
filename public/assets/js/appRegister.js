@@ -46,14 +46,14 @@ validation = () => {
     let rut = document.getElementById('rutNumber').value
     let telefono = document.getElementById('phone').value
     let destination = document.getElementById('destination').value
-    let time = new Date().toLocaleString()
+    let time = datetime.toLocaleString()
     if (nombre === '' || rut == '' || destination == '' || telefono == '') {
-        console.log('complete')
-        status.style.backgroundColor = '#f9dae3';
-        status.innerHTML = `<span class="status">Complete los cambios requeridos</span>`
+        // console.log('complete')
+        // status.style.backgroundColor = '#f9dae3';
+        // status.innerHTML = `<span class="status">Complete los cambios requeridos</span>`
     } else {
-        status.style.backgroundColor = '#c3e1c3';
-        status.innerHTML = `<span class="status">Agregado</span>`
+        // status.style.backgroundColor = '#c3e1c3';
+        // status.innerHTML = `<span class="status">Agregado</span>`
         redirectFromRegister()
     }
 };

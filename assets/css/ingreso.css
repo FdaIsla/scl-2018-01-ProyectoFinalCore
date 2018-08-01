@@ -1,12 +1,32 @@
 
 body p{
     text-align: center;
-    font-size: 25px;
-    font-style: italic;
+    font-size: 20px;
+    color: #979695;
+}
+
+#logoIf {
+    width: 20%;
+    margin-top: 10%;
+    margin-right: 1px;
+}
+
+#caruselFoto img {
+    margin-top: 1%;
+    padding: 4em;
+    
 }
 
 .card-img-top {
     width: 40%;
-    margin-top: 30%;
+    margin-top: 10%;  
+}
+
+#ingresar {
+    margin-top: 5%;
+    width: 70%;
+    height: 50px;
+    font-size: 23px;
+  
    
 }

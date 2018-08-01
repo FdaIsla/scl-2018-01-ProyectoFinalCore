@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="stylesheet" href="/public/assets/css/ingreso.css">
     <title>Document</title>
 </head>
 
@@ -17,19 +17,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-12 ">
-                <form class="form-inline">
-                    <div class="form-group mb-2">
-                        <label for="staticEmail2" class="sr-only">Email</label>
-                        <input type="email" class="form-control" id="staticEmail2" placeholder="email@example.com">
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2" onclick="loginWithFirebase()">Confirm identity</button>
-                </form>
+                <!-- <div class="card" style="width: 20rem;"> -->
+                <img class="card-img-top rounded mx-auto d-block " src="img/maquetaLogo.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Haz click para ingresar tu resgistro de visita</p>
+                    <a href="/public/html/registro.html" class="btn btn-primary btn-lg btn-block">Go</a>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -47,9 +43,6 @@
         };
         firebase.initializeApp(config);
     </script>
-
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
     <!-- others src -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
