@@ -8,32 +8,43 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="stylesheet" href="/public/assets/css/registroUsuario.css">
     <title>Document</title>
 </head>
 
 <body>
-
-    <div id="ingreso" class="container">
-        <div class="row ">
-            <div class="col-12 col-md-12 ">
-                <img id="logo" src="../img/logoVisita.png" class="rounded mx-auto d-block" alt="">
-                <h3>Registro de visitas</h3>
-                <p>Ingresa a tu cuenta para comenzar a registrar y administrar tus visitas</p>
-                <div class="col-12 col-md-12">
-                    <form id="formulario" class="rounded mx-auto d-block">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="staticEmail2" aria-describedby="emailHelp" placeholder="Enter email" required>
+    <header>
+        <img id="logo" class="rounded mx-auto d-block" src="../img/logoVisita.png" alt="">
+        <h1>Registrate</h1>
+    </header>
+    <div id="formulario" class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="rounded mx-auto d-block">
+                    <div class="form-row ">
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password" required>
+                        <div class="form-group col-md-6">
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                         </div>
-                        <button type="submit" class="btn btn-primary rounded mx-auto d-block" onclick="loginWithFirebase()">Confirm</button>
-                    </form>
+                    </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
                 </div>
             </div>
+            <button type="submit" class="btn btn-primary" onclick="registerWithFirebase()">Sign in</button>
+            </form>
         </div>
     </div>
+    </div>
+
+
 
 
     <!-- firebase src  -->
@@ -49,8 +60,9 @@
             messagingSenderId: "153325937655"
         };
         firebase.initializeApp(config);
+        // Get a reference to the database service
+        var database = firebase.database();
     </script>
-
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
     <!-- others src -->
@@ -59,7 +71,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
     <!-- js src -->
-    <script src="/public/assets/js/app.js"></script>
+    <script src="/public/assets/js/appRegister.js"></script>
 </body>
 
 </html>

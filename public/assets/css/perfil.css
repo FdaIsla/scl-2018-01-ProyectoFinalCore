@@ -1,16 +1,19 @@
 header nav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#010205+0,0a1116+19,ededf9+100 */
-background: #575151; /* Old browsers */
-background: -moz-linear-gradient(left, #575151 0%, #575151 19%, #575151 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #575151 0%,#575151 19%,#575151 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #575151 0%,#575151 19%,#575151 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010205', endColorstr='#ededf9',GradientType=1 ); /* IE6-9 */
-height: 100px;
+    background: #292727;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #292727 0%, #292727 19%, #292727 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #292727 0%, #292727 19%, #292727 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #292727 0%, #292727 19%, #292727 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#010205', endColorstr='#ededf9', GradientType=1);
+    /* IE6-9 */
 }
 
-header #logo {
-    color: whitesmoke;
-    font-size: 30px;
+#logo {
+    width: 35%;
 }
 
 header .nav-link {
@@ -18,43 +21,61 @@ header .nav-link {
     font-size: 30px;
 }
 
-#box img{
+#box {
+    background: #f5f4f4;
+}
+
+#box img {
     margin-top: 10%;
+    margin-bottom: 10%;
     width: 80%;
 }
 
-#box h2{
-    margin-top: 10%; 
-    font-size: 50px; 
+#box h2 {
+    margin-top: 10%;
+    font-size: 50px;
     color: #3f3b3b;
 }
-#box p{
-    font-size: 30px; 
+
+#box p {
+    font-size: 30px;
     color: #feb062;
 }
 
-#box1 {
-    margin-top: 5%;  
+#box0 {
+    background: #f5f4f4;
+    margin-top: 2%;
+    padding: 1em;
 }
 
-#box1 h5{
+#box1 {
+    background: #f5f4f4;
+    margin-top: 5%;
+    padding: 1em;
+    height: 600px;
+}
+
+#box1 h5 {
     font-size: 27px;
     font-weight: bold;
 }
-#box1 h6{
+
+#box1 h6 {
     font-size: 25px;
     font-weight: bold;
 }
-#box1 p{
+
+#box1 p {
     font-size: 20px;
     font-style: oblique;
 }
 
-#box1 h5, h6, p{
+#box1 h5,
+h6,
+p {
     text-align: center;
     color: #3f3b3b;
 }
-
 
 #box #disabledSelect {
     height: 60px;
@@ -62,13 +83,13 @@ header .nav-link {
 }
 
 @media only screen and (max-width: 600px) {
-    #box h2{
-        margin-top: 10%; 
-        font-size: 25px; 
+    #box h2 {
+        margin-top: 10%;
+        font-size: 25px;
         color: #3f3b3b;
     }
-    #box p{
-        font-size: 15px; 
+    #box p {
+        font-size: 15px;
         color: #feb062;
     }
 }
